@@ -1,0 +1,13 @@
+@import "base/reset";
+@import "variables/variables.scss";
+@import "base/tipografia";
+@import "layout/body";
+@import "layout/header";
+@import "layout/footer";
+@import "views/index";
+@import "views/especialidades";
+@import "views/turnos";
+@import "views/contacto";
+@import "views/sobreMi";  
+  
+// final del traspaso a Sass.

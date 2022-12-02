@@ -1,0 +1,73 @@
+// FUENTES:
+// font family:
+
+$fuente-h1: "Oxygen", sans-serif;
+
+// font color:
+$fuente-marron: rgb(80, 35, 1);
+
+//TRANSICIONES
+
+$transicion-7: all, 0.7s;
+
+
+
+
+
+
+
+
+//MIXINS, EXTENDS, MIXIN CON PARAMETROS
+
+@mixin centrado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin justify-around {
+    justify-content: space-around;        
+}
+
+.contenedor-generico {
+  @include centrado;
+  background-color: gray;
+  margin: 2.5rem auto;
+  width: 85%;
+  height: 50vh;
+}
+
+.contenedor--aviso {
+  @extend .contenedor-generico;
+  background-color: rosybrown;
+}
+
+.contenedor--imagenes{
+    @extend .contenedor-generico;
+    @include justify-around;
+}
+
+@media only screen and (max-width: 998px) {
+    .contenedor--imagenes {
+      height: auto;
+      flex-direction: column;
+    }
+  }
+
+@mixin tamaño-img($alto, $ancho){
+    width: $ancho;
+    height: $alto;
+}
+
+.imagen-s{
+    @include tamaño-img(20rem, 20rem)
+}
+
+.imagen-m{
+    @include tamaño-img(25rem, 25rem)
+}
+
+.imagen-l{
+    @include tamaño-img(30rem, 30rem)
+}
+

@@ -1,0 +1,122 @@
+  /* TITULO ESPECIALIDADES */
+  
+  .especialidades-texto h2 {
+    color: $fuente-marron;
+    font-size: 2.5rem;
+  }
+  
+  .especialidades-texto h3 {
+    font-size: 1.9rem;
+  }
+  
+  .especialidades-texto p {
+    font-size: 1.5rem;
+  }
+  
+  /* media query tablet */
+  
+  @media only screen and (min-width: 576px) {
+    .especialidades-texto h2 {
+      font-size: 5rem;
+    }
+  
+    .especialidades-texto h3 {
+      font-size: 2.5rem;
+    }
+  
+    .especialidades-texto p {
+      font-size: 2rem;
+    }
+  }
+  
+  /* media query pc */
+  @media only screen and (min-width: 1200px) {
+    .especialidades-texto h2 {
+      font-size: 8rem;
+    }
+  
+    .especialidades-texto h3 {
+      font-size: 4rem;
+    }
+  
+    .especialidades-texto p {
+      font-size: 3rem;
+    }
+  }
+  
+  /* CARDS ESPECIALIDADES */
+  
+  .card-img-filter {
+    filter: brightness(0.5);
+  }
+  
+  .card h4 {
+    transition: all 0.7s;
+  }
+  
+  .card-effect:hover .card h4 {
+    transform: scale(1.1);
+  }
+  
+  .card-text-style h4 {
+    font-size: 1.8rem;
+    letter-spacing: 5px;
+  }
+  
+  .card-text-style p {
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+  }
+  
+  .card-text-style a {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    transition: all 0.4s;
+  }
+  
+  /* media query Tablet */
+  
+  @media only screen and (min-width: 576px) {
+    .card-text-style h4 {
+      font-size: 3.5rem;
+      letter-spacing: 6.5px;
+    }
+  
+    .card-text-style p {
+      font-size: 2.5rem;
+      letter-spacing: 3px;
+    }
+  
+    .card-text-style a {
+      font-size: 3rem;
+      letter-spacing: 5px;
+      transition: all 0.4s;
+    }
+  }
+  
+  /* media query tablet */
+  @media only screen and (min-width: 768px) {
+    .card-text-style h4 {
+      font-size: 2.5rem;
+      letter-spacing: 3px;
+    }
+  
+    .card-text-style p {
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+  
+    .card-text-style a {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      transition: all 0.4s;
+    }
+  
+    .last-card p {
+      font-size: 1.8rem;
+    }
+  }
+  
+  .card-text-style a:hover {
+    transform: scale(1.1);
+  }

@@ -1,0 +1,224 @@
+.header {
+    background-image: url(../img/background/bkg-nuevoCut.jpg);
+    background-position: 75% 135%;
+    background-size: cover;
+    transition: all 1s;
+    position: relative;
+  }
+  
+  .header-sec {
+    background-image: url(../img/background/bkg-nuevoCut.jpg);
+    background-position: 75% 58%;
+    background-size: cover;
+    transition: all 1s;
+    position: relative;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .header {
+      background-image: url(../img/background/bkg-nuevoCut.jpg);
+      background-position: 307% 50%;
+      background-size: cover;
+      transition: all 1s;
+      position: relative;
+    }
+  }
+  
+  /* LOGO */
+  .logo-text {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    margin-left: 10px;
+  }
+  
+  /* media query mobile-xl */
+  @media only screen and (min-width: 576px) {
+    .logo-text {
+      font-size: 3.5rem;
+      letter-spacing: 5px;
+    }
+  }
+  
+  /* media query tablet */
+  @media only screen and (min-width: 768px) {
+    .logo-text {
+      font-size: 2.5rem;
+      letter-spacing: 5px;
+    }
+  }
+  
+  /* media query pc */
+  @media only screen and (min-width: 1200px) {
+    .logo-text {
+      font-size: 4.5rem;
+      letter-spacing: 8px;
+    }
+  }
+  
+  /* MENU ICON */
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  /* media query Mobile */
+  @media only screen and (max-width: 767px) {
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+    }
+  }
+  
+  /* NAV BAR */
+  
+  .nav-a {
+    color: $fuente-marron;
+    font-size: 1.6rem;
+    border-radius: 3px;
+  }
+  
+  /* media query tablet */
+  @media only screen and (min-width: 768px) {
+    .list-a {
+      display: flex;
+      margin: 0;
+    }
+  
+    .nav-a {
+      font-size: 1.3rem;
+      border-radius: 3px;
+    }
+  }
+  
+  /* media query pc */
+  
+  @media only screen and (min-width: 1200px) {
+    .list-a {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 5px;
+    }
+  
+    .nav-a {
+      font-size: 1.5rem;
+      border-radius: 3px;
+    }
+  }
+  
+  /* media query tablet */
+  @media only screen and (max-width: 767px) {
+    .contenedor-a {
+      display: none;
+    }
+  
+    .contenedor-a.show {
+      display: block;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+  }
+  
+  .nav-a:hover {
+    background-color: rgb(230, 195, 175);
+    transition: all 0.7s;
+  }
+  
+  /* TITULO */
+  
+  .header-h1 {
+    color: $fuente-marron;
+    text-shadow: 1px 1px 0.9px#fff;
+    font-size: 5rem;
+    font-family: "Oxygen", sans-serif;
+    line-height: 12px;
+    font-weight: 400;
+    padding: 12px 0 25px 0;
+    margin: 0 0 0 -6px;
+  }
+  
+  .header-h2 {
+    color: #000;
+    text-shadow: 1px 1px 0.9px#fff;
+    font-size: 1.5rem;
+    padding: 0px 0;
+  }
+  
+  .container-titulo {
+    margin: 10px 0 0 10px;
+  }
+  
+  /* media query mobile-xl */
+  @media only screen and (min-width: 576px) {
+    .header-h1 {
+      font-size: 8rem;
+      line-height: 8px;
+      padding: 30px 0 50px 0;
+    }
+  
+    .header-h2 {
+      font-size: 2rem;
+    }
+    .container-titulo {
+      margin: 2rem 0 0 1.5rem;
+    }
+  }
+  
+  /* media query tablet */
+  @media only screen and (min-width: 768px) {
+    .header-h1 {
+      font-size: 10rem;
+      font-family: "Oxygen", sans-serif;
+      line-height: 8px;
+      font-weight: 400;
+      padding: 50px 0 72px 0;
+      margin: 0 0 0 0px;
+    }
+  
+    .header-h2 {
+      color: #000;
+      font-size: 2.5rem;
+      text-shadow: 1px 2px#fff;
+      padding: 0px 0;
+    }
+  
+    .container-titulo {
+      margin: 50px 0 0 50px;
+    }
+  }
+  
+  /* media query pc */
+  @media only screen and (min-width: 1200px) {
+    .header-h1 {
+      font-size: 17rem;
+      font-family: "Oxygen", sans-serif;
+      line-height: 50px;
+      font-weight: 400;
+      padding: 50px 0 72px 0;
+      margin: 0 0 0 0px;
+    }
+  
+    .header-h2 {
+      color: #000;
+      font-size: 5rem;
+      text-shadow: 1px 2px#fff;
+      padding: 0px 0;
+    }
+  
+    .container-titulo {
+      margin: 50px 0 0 0px;
+    }
+  }
+  
+  .header::after {
+    content: "";
+    display: block;
+    margin-bottom: -2px;
+    width: 100%;
+    height: 20px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }

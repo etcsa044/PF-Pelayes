@@ -1,0 +1,31 @@
+.footer-style {
+    background-color: gray;
+    margin-top: 10rem;
+  }
+  
+  .logo-text-footer {
+    font-size: 2rem;
+    letter-spacing: 6px;
+    margin-bottom: 15px;
+  }
+  
+  /* media query tablet */
+  
+  /* logo footer */
+  @media only screen and (min-width: 576px) {
+    .logo-text-footer {
+      font-size: 3rem;
+      letter-spacing: 7px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    /* lista recursos y redes */
+    .footer-style ul {
+      font-size: 1.5rem;
+    }
+    /* copyrigth */
+  
+    .footer-style p {
+      font-size: 1.5rem;
+    }
+  }
