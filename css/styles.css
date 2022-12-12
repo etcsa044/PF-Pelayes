@@ -141,9 +141,12 @@ body {
 /* media query tablet */
 @media only screen and (max-width: 767px) {
   .contenedor-a {
-    display: none; }
+    height: 0;
+    overflow: hidden;
+    transition: all .9s; }
   .contenedor-a.show {
-    display: block; } }
+    height: 12rem;
+    transition: all .9s; } }
 
 .nav-a:hover {
   background-color: #e6c3af;
@@ -506,3 +509,6 @@ center {
 input {
   position: relative;
   z-index: 9999; }
+
+a {
+  text-decoration: none; }
