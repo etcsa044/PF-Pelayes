@@ -120,3 +120,18 @@
   .card-text-style a:hover {
     transform: scale(1.1);
   }
+
+  // AVISOS DEL DIA:
+
+  .aviso-titulo{
+    @include centrado;
+    background-color: black;
+    height: 100%;
+  }
+
+  @media only screen and (max-width: 680px) {
+    .aviso-titulo{
+      display: flex;
+      flex-direction: column;
+    }
+  }

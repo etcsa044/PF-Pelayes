@@ -19,7 +19,7 @@
     "iframe3 descripcion3";
 
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 20px;
+  column-gap: 0px;
   row-gap: 20px;
 }
 
@@ -38,7 +38,6 @@
   grid-area: descripcion1;
   font-size: 1.6rem;
   background-color: rgba(222, 184, 135, 0.337);
-  padding: 2px 5px;
 }
 
 #descripcion-barras h3 {

@@ -117,7 +117,13 @@ body {
 .nav-a {
   color: #502301;
   font-size: 1.6rem;
-  border-radius: 3px; }
+  border-radius: 3px;
+  padding: 0 0;
+  transition: all, 0.7s; }
+  .nav-a:hover {
+    background: linear-gradient(to right, rgba(230, 195, 175, 0), #e6c3af);
+    transition: all, 0.7s;
+    padding: 0px 2.5rem 0 0.5rem; }
 
 /* media query tablet */
 @media only screen and (min-width: 768px) {
@@ -143,14 +149,28 @@ body {
   .contenedor-a {
     height: 0;
     overflow: hidden;
-    transition: all .9s; }
+    transition: all 0.9s; }
   .contenedor-a.show {
     height: 12rem;
-    transition: all .9s; } }
+    transition: all 0.9s; } }
 
-.nav-a:hover {
-  background-color: #e6c3af;
-  transition: all 0.7s; }
+@media only screen and (min-width: 768px) {
+  .nav-a {
+    background-color: rgba(0, 255, 255, 0);
+    color: #502301;
+    margin: 0 2px;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    padding: 0 0;
+    transition: all 1s; }
+    .nav-a:hover {
+      background-color: #e6c3af;
+      transition: all 1s;
+      padding: 0px 2.5rem 0 0.5rem; } }
+
+@media only screen and (min-width: 992px) {
+  .nav-a {
+    font-size: 1.5rem; } }
 
 /* TITULO */
 .header-h1 {
@@ -336,6 +356,18 @@ body {
 .card-text-style a:hover {
   transform: scale(1.1); }
 
+.aviso-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 100%; }
+
+@media only screen and (max-width: 680px) {
+  .aviso-titulo {
+    display: flex;
+    flex-direction: column; } }
+
 .carrousel-style h2 {
   font-size: 5rem;
   color: #fff;
@@ -351,7 +383,7 @@ body {
   display: none;
   grid-template-areas: "iframe1 descripcion1" "descripcion2 iframe2" "iframe3 descripcion3";
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 20px;
+  column-gap: 0px;
   row-gap: 20px; }
 
 @media only screen and (min-width: 1200px) {
@@ -365,8 +397,7 @@ body {
 #descripcion-barras {
   grid-area: descripcion1;
   font-size: 1.6rem;
-  background-color: rgba(222, 184, 135, 0.337);
-  padding: 2px 5px; }
+  background-color: rgba(222, 184, 135, 0.337); }
 
 #descripcion-barras h3 {
   font-size: 3rem; }
@@ -402,7 +433,12 @@ body {
     display: none; } }
 
 #contact {
-  padding: 10px 0 10px; }
+  padding: 40px 25px;
+  background-color: rgba(230, 195, 175, 0.308);
+  border: 1px solid rgba(80, 35, 1, 0.145); }
+
+.div1 {
+  background-color: aqua; }
 
 .contact-text {
   margin: 45px auto; }
@@ -429,7 +465,7 @@ body {
   opacity: 1;
   margin: 25px auto 0; }
 
-/* Input Styles */
+/* Input */
 .form {
   width: 100%;
   padding: 15px;
@@ -441,44 +477,22 @@ body {
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s; }
-
-.form:hover {
-  border: 1px solid #502301; }
-
-.form:focus {
-  color: white;
-  outline: none;
-  border: 1px solid #502301; }
+  .form:hover {
+    border: 1px solid #502301; }
+  .form:focus {
+    color: white;
+    outline: none;
+    border: 1px solid #502301; }
 
 .textarea {
   height: 200px;
   max-height: 200px;
   max-width: 100%; }
 
-/* Generic Button Styles */
-.button {
-  padding: 8px 12px;
-  background: #1e4559;
-  display: block;
-  width: 120px;
-  margin: 10px 0 0px 0;
-  border-radius: 3px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-  text-align: center;
-  font-size: 1.5rem;
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1); }
-
-.button:hover {
-  background: #8bc3a3;
-  color: white; }
-
-/* Send Button Styles */
+/* Boton Enviar */
 .form-btn {
-  width: 180px;
+  font-size: 2rem;
+  width: 18rem;
   display: block;
   height: auto;
   padding: 15px;
@@ -494,11 +508,9 @@ body {
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1); }
-
-.form-btn:hover {
-  background: #f4ab82;
-  color: #502301;
-  border: none; }
+  .form-btn:hover {
+    background: #f4ab82;
+    border: 1px solid rgba(80, 35, 1, 0.288); }
 
 .form-btn:active {
   opacity: 0.9; }
@@ -509,6 +521,3 @@ center {
 input {
   position: relative;
   z-index: 9999; }
-
-a {
-  text-decoration: none; }
